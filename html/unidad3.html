@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<html lang="es">
+	<head>
+	<!--Titulo-->
+		<title>Ciclo de instrucciones</title>
+		<!--Caracteres especiales-->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Conexion con la hoja de estios y tipos de letra-->
+		<link rel="stylesheet" type="text/css"	href="..\css\style.css" media="screen"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Koulen&display=swap" rel="stylesheet">
+	</head>
+	<body class="cuerpo">
+	<!--Div con boton del menu-->
+		<div class="hamburger hamburger--spring" onclick="muestra()">
+		<div class="hamburger-box">
+		  <div class="hamburger-inner"></div>
+		</div>
+	  </div>
+	  
+	  <!--Menu desplegable-->
+	  <nav class="nav" id="switch" >
+			<ul class="list">
+			
+				<li class="list__item">
+				<div class="list__button"><a href="./Inicio.html" class="nav__link">Inicio</a></div>
+				
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 1</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad1.html" class="nav__link nav__link--inside">Tipos de Arquitectura</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad11.html" class="nav__link nav__link--inside">Arquitectura Segmentada</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad12.html" class="nav__link nav__link--inside">Multiprocesamiento</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad13.html" class="nav__link nav__link--inside">Analisis de componentes</a>
+						</li>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad14.html" class="nav__link nav__link--inside">CPU</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad15.html" class="nav__link nav__link--inside">ALU</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 2</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad2.html" class="nav__link nav__link--inside">Unidad de control</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad21.html" class="nav__link nav__link--inside">Registros CPU</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad22.html" class="nav__link nav__link--inside">Buses</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad23.html" class="nav__link nav__link--inside">Memoria</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad24.html" class="nav__link nav__link--inside">Entrada/Salida</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 3</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad3.html" class="nav__link nav__link--inside">Ciclo de instrucciones</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad31.html" class="nav__link nav__link--inside">Modos de direccionamiento</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad32.html" class="nav__link nav__link--inside">Chipset</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad33.html" class="nav__link nav__link--inside">Ambiente de Servicio</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 4</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad4.html" class="nav__link nav__link--inside">Ambientes de Servicio</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad41.html" class="nav__link nav__link--inside">Paralelismo</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad42.html" class="nav__link nav__link--inside">Sistemas de memoria</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad43.html" class="nav__link nav__link--inside">Memoria Distribuida</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+			</ul>
+		</nav>
+		<!--Div para el titulo-->
+		<div class="sup">
+			<center class="titulo">Arquitectura de computadoras</center>
+		</div>
+		
+		<div class="info1">
+		 <font class="titulos">Ciclo de instrucciones.</font><br>
+		</div>
+		<div class="desc">
+		El Ciclo Instrucción cuenta con dos fases, la primera es la obtención (búsqueda) y la segunda es la fase de ejecución:
+		<br><br>
+		<h3>Ciclo Fetch-Decode-Execute.</h3><br>
+		Un ciclo de instrucción (también llamado ciclo de fetch-and-execute  o ciclo de fetch-decode-execute en inglés) es el período que tarda la  unidad central de procesamiento (CPU) en ejecutar una instrucción  de lenguaje máquina. 
+		Comprende una secuencia de acciones determinada que debe llevar  a cabo el CPU para ejecutar cada instrucción en un programa. Cada  instrucción del juego de instrucciones de un CPU puede requerir  diferente número de ciclos de instrucción para su ejecución. Un  ciclo de instrucción está formado por uno o más ciclos máquina. 
+		Para que cualquier sistema de proceso de datos basado en  microprocesador (por ejemplo un ordenador o computadora  personal) o microcontrolador (por ejemplo un reproductor de MP3)  realice una tarea (programa) primero debe buscar cada instrucción  en la memoria principal y luego ejecutarla.
+		<br><br>
+		<h3>Segmentación de instrucciones.</h3><br>
+		El objetivo de la segmentación es ejecutar simultáneamente  diferentes etapas de distintas instrucciones, lo cual permite aumentar  el rendimiento del procesador sin tener que hacer más rápidas todas  las unidades del procesador (ALU, UC, buses, etc.) y sin tener que  duplicarlas. 
+		La división de la ejecución de una instrucción en diferentes etapas se  debe realizar de tal manera que cada etapa tenga la misma duración,  generalmente un ciclo de reloj. 
+		Es necesario añadir registros para almacenar los resultados  intermedios entre las diferentes etapas, de modo que la información  generada en una etapa esté disponible para la etapa siguiente. 
+		La segmentación es como una cadena de montaje. En cada etapa de  la cadena se lleva a cabo una parte del trabajo total y cuando se acaba el trabajo de una etapa. 
+		El producto pasa a la siguiente y así sucesivamente hasta llegar al  final. 
+		Si hay N etapas, se puede trabajar sobre N productos al mismo  tiempo y, si la cadena está bien equilibrada, saldrá un producto  acabado en el tiempo que se tarda en llevar a cabo una de las etapas.  De esta manera, no se reduce el tiempo que se tarda en hacer un  producto, sino que se reduce el tiempo total necesario para hacer una  determinada cantidad de productos porque las operaciones de cada  etapa se efectúan simultáneamente.
+		<br><br>
+		<h3>Conjunto de instrucciones.</h3> <br>
+		La segmentación de instrucciones es similar al uso de una cadena de  montaje en una fábrica de manufacturación. En las cadenas de  montaje, el producto pasa a través de varias etapas de producción  antes de tener el producto terminado. Cada etapa o segmento de la  cadena está especializada en un área específica de la línea de  producción y lleva a cabo siempre la misma actividad. Esta  tecnología es aplicada en el diseño de procesadores eficientes. 
+		A estos procesadores se les conoce como pipeline processors. Estos  están compuestos por una lista de segmentos lineales y secuenciales  en donde cada segmento lleva a cabo una tarea o un grupo de tareas  computacionales. Los datos que provienen del exterior se introducen  en el sistema para ser procesados.  
+		La computadora realiza operaciones con los datos que tiene  almacenados en memoria, produce nuevos datos o información para  uso externo. 
+		Las arquitecturas y los conjuntos de instrucciones se pueden  clasificar considerando aspectos posibles: 
+		Almacenamiento de operandos en la CPU: dónde se ubican los  operandos aparte de la memoria.
+		Número de operandos explícitos por instrucción: cuántos operandos  se expresan en forma explícita en una instrucción típica.  
+		Como son 0,1,2,3. 
+		Posición del operando: Todos en los registros internos de la CPU.  Cómo se especifica la dirección de memoria (modos de  direccionamiento disponible. 
+		Operaciones: Qué operaciones están disponibles en el conjunto de  instrucciones. 
+		Tipo y tamaño de operandos y cómo se especifican.
+		<div><br><center><img style="width: 350px;height: 200px;" src="../media/img/ciclo.png"></center><br> </div>
+		
+	</div>
+		
+		<script src="..\js\main.js"></script>
+	</body>
+</html>

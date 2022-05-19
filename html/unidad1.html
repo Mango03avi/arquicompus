@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<html lang="es">
+	<head>
+	<!--Titulo-->
+		<title>Tipos de Arquitectura</title>
+		<!--Caracteres especiales-->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Conexion con la hoja de estios y tipos de letra-->
+		<link rel="stylesheet" type="text/css"	href="..\css\style.css" media="screen"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Koulen&display=swap" rel="stylesheet">
+	</head>
+	<body class="cuerpo">
+	<!--Div con boton del menu-->
+		<div class="hamburger hamburger--spring" onclick="muestra()">
+		<div class="hamburger-box">
+		  <div class="hamburger-inner"></div>
+		</div>
+	  </div>
+	  
+	  <!--Menu desplegable-->
+	  <nav class="nav" id="switch" >
+			<ul class="list">
+			
+				<li class="list__item">
+				<div class="list__button"><a href="./Inicio.html" class="nav__link">Inicio</a></div>
+				
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 1</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad1.html" class="nav__link nav__link--inside">Tipos de Arquitectura</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad11.html" class="nav__link nav__link--inside">Arquitectura Segmentada</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad12.html" class="nav__link nav__link--inside">Multiprocesamiento</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad13.html" class="nav__link nav__link--inside">Analisis de componentes</a>
+						</li>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad14.html" class="nav__link nav__link--inside">CPU</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad15.html" class="nav__link nav__link--inside">ALU</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 2</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad2.html" class="nav__link nav__link--inside">Unidad de control</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad21.html" class="nav__link nav__link--inside">Registros CPU</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad22.html" class="nav__link nav__link--inside">Buses</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad23.html" class="nav__link nav__link--inside">Memoria</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad24.html" class="nav__link nav__link--inside">Entrada/Salida</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 3</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad3.html" class="nav__link nav__link--inside">Ciclo de instrucciones</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad31.html" class="nav__link nav__link--inside">Modos de direccionamiento</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad32.html" class="nav__link nav__link--inside">Chipset</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad33.html" class="nav__link nav__link--inside">Ambiente de Servicio</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 4</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad4.html" class="nav__link nav__link--inside">Ambientes de Servicio</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad41.html" class="nav__link nav__link--inside">Paralelismo</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad42.html" class="nav__link nav__link--inside">Sistemas de memoria</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad43.html" class="nav__link nav__link--inside">Memoria Distribuida</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+			</ul>
+		</nav>
+		<!--Div para el titulo-->
+		<div class="sup">
+			<center class="titulo">Arquitectura de computadoras</center>
+		</div>
+		
+		<div class="info1">
+		 <font class="titulos">Modelos de Arquitectura Clasicas.</font><br>
+		</div>
+		<div class="desc">
+			Estas arquitecturas se desarrollaron en las primeras  computadoras electromecánicas y de tubos de vacío. 
+			Hay dos arquitecturas distintas relacionadas con el uso y  distribución de la memoria: Arquitectura de Jonh Von  Neumman y Arquitectura Harvard.<br>
+			<br>
+			<h2>Arquitectura Von Neumann</h2> <br>
+			Tradicionalmente los sistemas con microprocesadores se  basan en esta arquitectura, en la cual la unidad central de  proceso (CPU), está conectada a una memoria principal  única (casi siempre sólo RAM) donde se guardan las  instrucciones del programa y los datos. A dicha memoria se  accede a través de un sistema interconexión de buses único  (control, direcciones y datos).
+			En un sistema con arquitectura Von Neumann el tamaño de  la unidad de datos o instrucciones está fijado por el ancho  del bus que comunica la memoria con la CPU. Así un  microprocesador de 8 bits con un bus de 8 bits, tendrá que  manejar datos e instrucciones de una o más unidades de 8  bits (bytes) de longitud.  
+			Si tiene que acceder a una instrucción o dato de más de un  byte de longitud, tendrá que realizar más de un acceso a la  memoria. 
+			El tener un único bus hace que el microprocesador sea más  lento en su respuesta, ya que no puede buscar en memoria  una nueva instrucción mientras no finalicen las  transferencias de datos de la instrucción anterior. 
+			Las computadoras digitales convencionales presentan un  aspecto Von Neumann. Este modelo consta de cinco  componentes principales. 
+			<br>Unidad de Memoria. 
+			<br>Unidad de Entrada/Salida.  
+			<br>Unidad de Control. Incluidos CPU. 
+			<br>Unidad Aritmética Lógica. Incluida en CPU. 
+			<br>Registros de Programas. Incluidos en CPU.<br>
+			Las instrucciones provenientes del sistema de entrada, son  almacenados por la memoria, procesados por la ALU bajo la  dirección de la unidad de control. Los resultados obtenidos  son enviados a la unidad de salida. 
+			El programa almacenado es lo más importante en el modelo.  Los programas se almacenan en la memoria del equipo junto  con los datos a procesar. 
+			En las computadoras de programa almacenado, el programa  puede manipularse como si se tratara de datos. Este concepto  da origen a los compiladores, sistemas operativos y es la  base de la gran versatilidad de las computadoras modernas. 
+			<center><img class="compu" src="../media/img/von.png"></center> <br>
+			<h3>Limitaciones Von Neumann</h3> <br>
+			La longitud de las instrucciones por el bus de datos, que hace  que el microprocesador tenga que realizar varios accesos a  memoria para buscar instrucciones complejas.
+			La velocidad de operación a causa del bus único para datos e  instrucciones que no deja acceder simultáneamente a unos y  otras, lo cual impide superponer ambos tiempos de acceso.<br>
+			<br> <h2>Modelo Harvard</h2> <br> 
+			Esta arquitectura utiliza los Micro controladores, tiene la  unidad central de proceso (CPU) conectada a dos memorias  (una con las instrucciones y otra con los datos) por medio de  dos buses diferentes. 
+			Una de las memorias contiene solamente las instrucciones  del programa (Memoria de Programa), y la otra sólo  almacena datos (Memoria de Datos). 
+			Ambos buses son totalmente independientes lo que permite  que la CPU pueda acceder de forma independiente y  simultánea a la memoria de datos y a la de instrucciones. 
+			Como los buses son independientes estos pueden tener  distintos contenidos en la misma dirección y también distinta  longitud. 
+			También la longitud de los datos y las instrucciones puede  ser distinta, lo que optimiza el uso de la memoria en general. 
+			Para un procesador de Set de Instrucciones Reducido, o  RISC (Reduced Instrucción Set Computer), el set de  instrucciones y el bus de memoria de programa pueden 
+			diseñarse de tal manera que todas las instrucciones tengan  una sola posición de memoria de programa de longitud. 
+			Además, al ser los buses independientes, el CPU puede  acceder a los datos para completar la ejecución de una  instrucción, y al mismo tiempo leer la siguiente instrucción a  ejecutar. 
+			<br> Modelo Harvard. <br>
+			El tamaño de las instrucciones no está relacionado con el de  los datos, y por lo tanto puede ser optimizado para que  cualquier instrucción ocupe una sola posición de memoria de  programa, logrando así mayor velocidad y menor longitud de  programa. 
+			El tiempo de acceso a las instrucciones puede superponerse  con el de los datos, logrando una mayor velocidad en cada  operación. 
+			La principal desventaja de esta arquitectura; el bus de datos  y direcciones único se convierte en un cuello de botella por  el cual debe pasar toda la información que se lee de o se 
+			escribe a la memoria, obligando a que todos los accesos a  esta sean secuenciales. 
+			Limita el grado de paralelismo (acciones que se pueden  realizar al mismo tiempo) y por lo tanto, el desempeño de la  computadora.<br>
+			<br><center><img src="../media/img/harv.png"></center>
+		</div>
+		
+		<script src="..\js\main.js"></script>
+	</body>
+</html>

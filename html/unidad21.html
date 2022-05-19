@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<html lang="es">
+	<head>
+	<!--Titulo-->
+		<title>Registros CPU</title>
+		<!--Caracteres especiales-->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Conexion con la hoja de estios y tipos de letra-->
+		<link rel="stylesheet" type="text/css"	href="..\css\style.css" media="screen"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Koulen&display=swap" rel="stylesheet">
+	</head>
+	<body class="cuerpo">
+	<!--Div con boton del menu-->
+		<div class="hamburger hamburger--spring" onclick="muestra()">
+		<div class="hamburger-box">
+		  <div class="hamburger-inner"></div>
+		</div>
+	  </div>
+	  
+	  <!--Menu desplegable-->
+	  <nav class="nav" id="switch" >
+			<ul class="list">
+			
+				<li class="list__item">
+				<div class="list__button"><a href="./Inicio.html" class="nav__link">Inicio</a></div>
+				
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 1</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad1.html" class="nav__link nav__link--inside">Tipos de Arquitectura</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad11.html" class="nav__link nav__link--inside">Arquitectura Segmentada</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad12.html" class="nav__link nav__link--inside">Multiprocesamiento</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad13.html" class="nav__link nav__link--inside">Analisis de componentes</a>
+						</li>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad14.html" class="nav__link nav__link--inside">CPU</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad15.html" class="nav__link nav__link--inside">ALU</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 2</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad2.html" class="nav__link nav__link--inside">Unidad de control</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad21.html" class="nav__link nav__link--inside">Registros CPU</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad22.html" class="nav__link nav__link--inside">Buses</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad23.html" class="nav__link nav__link--inside">Memoria</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad24.html" class="nav__link nav__link--inside">Entrada/Salida</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 3</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad3.html" class="nav__link nav__link--inside">Ciclo de instrucciones</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad31.html" class="nav__link nav__link--inside">Modos de direccionamiento</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad32.html" class="nav__link nav__link--inside">Chipset</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad33.html" class="nav__link nav__link--inside">Ambiente de Servicio</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 4</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad4.html" class="nav__link nav__link--inside">Ambientes de Servicio</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad41.html" class="nav__link nav__link--inside">Paralelismo</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad42.html" class="nav__link nav__link--inside">Sistemas de memoria</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad43.html" class="nav__link nav__link--inside">Memoria Distribuida</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+			</ul>
+		</nav>
+		<!--Div para el titulo-->
+		<div class="sup">
+			<center class="titulo">Arquitectura de computadoras</center>
+		</div>
+		
+		<div class="info1">
+		 <font class="titulos">Registros CPU.</font><br>
+		</div>
+		<div class="desc">
+		Los registros que encuentran dentro de cada procesador su  función principales almacenar los valores de cada uno de los  datos,comandos,instrucciones o estados binarios que son los  que ordenan qué dato debe procesarse, así como la forma en  la que se debe realizar.  
+		Un registro no deja de ser una memoria de velocidad alta y  con poca capacidad. <br> 
+		Cada registro puede contener una instrucción, una dirección  de almacenamiento o cualquier tipo de dato.  <br>
+		En un procesador encontramos espacios con una capacidad  que oscila entre 4 y 64 bits porque cada registro debe tener un  tamaño suficiente para contener una instrucción. En el caso de  que un ordenador de 64 bit, cada registro de tener un tamaño  de 64 bits.  
+		Cada procesador tiene varias asignaciones o tareas que debe  de realizar para el manejo de la información.  <br>
+		La información es recibida generalmente en código binario,  procedente de las aplicaciones para, después, procesarlos de  una forma determinada. <br>
+		Digamos que el procesador traduce esos datos para que  nosotros, los usuarios, los entendamos.  <br>
+		Dentro de un microprocesador encontramos el registro de  información, cuya función es guardar de forma temporal los  datos a los que se accede frecuentemente.  
+		<br>
+		<br><h3>Tipos de registros</h3><br>  
+		Los registros del procesador se dividen o clasifican  atendiendo al propósito que sirven o a las instrucciones que  les ordenan. 
+		Registros de datos.  <br>
+		Guardan valores de datos numéricos, como son los  caracteres o pequeñas órdenes.  <br>
+		Los procesadores antiguos tenían un registro especial de  datos: el acumulador, el cual era usado para operaciones  determinadas.  <br>
+		Registro de datos de memoria (MDR).  <br>
+		Es un registro que se encuentra en el procesador y que está  conectado al bus de datos. Tiene poca capacidad y una  velocidad alta por la que escribe o lee los datos del bus que  van dirigidos a la memoria o al puerto E/S, es decir, un  periférico.  <br>
+		Registros de direcciones.  <br>
+		<br>Guardan direcciones que son usadas para acceder a la  memoria principal o primaria, que solemos conocer como  ROM o RAM. En este sentido, podemos ver procesadores con  registros que se usan solo para guardar direcciones o valores  numéricos. 
+		<br>Registros de propósito general (GPRs).  <br>
+		Son registros que sirven para almacenar direcciones o datos  generales. Se trata de una especie de registros mixtos que,  como su propio indica, no tienen una función específica.  
+		<br>Registros de propósito específico (SPRs). <br> 
+		<br>En esta ocasión, estamos ante registros que guardan datos del  estado del sistema, como puede ser el registro de estado o el  instruction pointer.  
+		<br>Registros de estado.  <br>
+		Sirven para guardar valores reales cuya función es determinar  cuándo una instrucción debe ejecutarse o no.  
+		<br>También se le conoce como CCR (Condition Code Register).  Dentro de este tipo de registros, encontramos el siguiente: <br> 
+		Registro de bandera o “FLAGS“.<br> 
+		Lo encontramos en los procesadores Intel con  arquitectura X86. Estamos ante un registro con 16 bits de  ancho. Pero, tiene 2 sucesores:  
+		EFLAGS, con 32 bits de ancho.  <br>
+		RFLAGS, con 64 bits de ancho. <br> 
+		Registros de coma flotante. <br>
+		La coma flotante es una representación, en forma de fórmula,  de números reales de distintos tamaños que sirve para realizar  operaciones aritméticas. Nos encontraremos con ella en  sistemas que requieren sistemas de procesados muy rápidos.  
+		Por tanto, estos registros guardan estas representaciones en  muchísimas arquitecturas.  <br>
+		Registros constantes.  <br>
+		Su cometido es guardar valores de sólo lectura como son el  0, 1 ó π. <br>
+		</div>
+		
+		<script src="..\js\main.js"></script>
+	</body>
+</html>

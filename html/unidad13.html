@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+	<html lang="es">
+	<head>
+	<!--Titulo-->
+		<title>Analisis de componentes</title>
+		<!--Caracteres especiales-->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Conexion con la hoja de estios y tipos de letra-->
+		<link rel="stylesheet" type="text/css"	href="..\css\style.css" media="screen"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Koulen&display=swap" rel="stylesheet">
+	</head>
+	<body class="cuerpo">
+	<!--Div con boton del menu-->
+		<div class="hamburger hamburger--spring" onclick="muestra()">
+		<div class="hamburger-box">
+		  <div class="hamburger-inner"></div>
+		</div>
+	  </div>
+	  
+	  <!--Menu desplegable-->
+	  <nav class="nav" id="switch" >
+			<ul class="list">
+			
+				<li class="list__item">
+				<div class="list__button"><a href="./Inicio.html" class="nav__link">Inicio</a></div>
+				
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 1</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad1.html" class="nav__link nav__link--inside">Tipos de Arquitectura</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad11.html" class="nav__link nav__link--inside">Arquitectura Segmentada</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad12.html" class="nav__link nav__link--inside">Multiprocesamiento</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad13.html" class="nav__link nav__link--inside">Analisis de componentes</a>
+						</li>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad14.html" class="nav__link nav__link--inside">CPU</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad15.html" class="nav__link nav__link--inside">ALU</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 2</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad2.html" class="nav__link nav__link--inside">Unidad de control</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad21.html" class="nav__link nav__link--inside">Registros CPU</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad22.html" class="nav__link nav__link--inside">Buses</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad23.html" class="nav__link nav__link--inside">Memoria</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad24.html" class="nav__link nav__link--inside">Entrada/Salida</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 3</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad3.html" class="nav__link nav__link--inside">Ciclo de instrucciones</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad31.html" class="nav__link nav__link--inside">Modos de direccionamiento</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad32.html" class="nav__link nav__link--inside">Chipset</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad33.html" class="nav__link nav__link--inside">Ambiente de Servicio</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 4</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad4.html" class="nav__link nav__link--inside">Ambientes de Servicio</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad41.html" class="nav__link nav__link--inside">Paralelismo</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad42.html" class="nav__link nav__link--inside">Sistemas de memoria</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad43.html" class="nav__link nav__link--inside">Memoria Distribuida</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+			</ul>
+		</nav>
+		<!--Div para el titulo-->
+		<div class="sup">
+			<center class="titulo">Arquitectura de computadoras</center>
+		</div>
+		
+		<div class="info1">
+		 <font class="titulos">Analisis de componentes.</font><br>
+		</div>
+		<div class="desc">
+			Análisis de componentes básicos de una computadora de escritorio.Una computadora está formada fundamentalmente por dos aspectos básicos:
+			Hardware y software.
+			Tenemos componentes esenciales y específicos para tareas puntuales.<br>
+			<br>
+			<h2>Componentes Internos.</h2> <br>
+			Cuando hablamos de una computadora nos referimos al conjunto
+			de componentes internos que se encuentra colocados dentro del gabinete.
+			Como sabes, los componentes internos son los que componen el hardware de
+			la computadora.<br>
+			Los principales componentes internos de la computadora son:<br>
+			Tarjeta madre (Motherboard) , placa base.<br>
+			CPU o procesador.<br>
+			Memoria RAM.<br>
+			Disco duro (HD).<br>
+			Fuente de alimentación.<br>
+			Además por lo general para evitar que en el interior de gabinete se acumule
+			calor que generan estos componentes, se añaden otros elementos que también
+			son considerados componentes internos.<br>
+			Estos pueden ser:<br>
+			Disipadores<br>
+			Ventiladores<br>
+			Refrigeración líquida.<br>
+			<br>
+				<h3>Tarjeta Madre (MotherBoard).</h3><br>
+				La tarjeta madre (MB) , también llamada “placa base” es de los componentes
+				esenciales de las computadoras. En ella se conectan los diferentes
+				componentes internos, incluyendo el procesador CPU, la memoria RAM, la
+				tarjeta gráfica, los discos duros, es decir todos los elementos internos.
+				En su forma, la tarjeta madre están construidas en una placa en la que se
+				encuentra un circuito integrado que interconecta un conjunto de chips, y
+				componentes electrónicos, conectores etc.
+				Además, dentro de una tarjeta madre pueden estar incorporados de fábrica los
+				siguientes componentes:<br>
+				Tarjeta de sonido.<br>
+				Tarjeta de red.<br>
+				Ranuras de expansión.<br>
+				Tarjeta gráfica.<br>
+				Puertos.<br>
+				<div><br><center><img style="width: 350px;height: 200px;" src="../media/img/madre.jpg"></center> </div>
+				<br>
+				No todas las placas base son iguales. Por lo que se tiene que saber los
+				componetes y especificaciones que soporte la misma y sean compatibles, el
+				procesador y los componentes.
+				La tarjeta madre es la que va a determinar el tipo de procesador y cantidad de
+				módulos de memoria RAM que pueden instalarse, la cantidad y los tipos de
+				<br>
+				discos duros que se conecten y la tarjeta de video que podrás instalar en ella,
+				entre otras cosas.
+				<br>
+				<br><h3>El procesador Unidad Central de Procesamiento CPU.</h3><br>
+				El CPU es algo así como el cerebro de tu computadora. En realidad es el
+				elemento encargado de analizar y procesar toda la información que ingresa y
+				sale de la computadora.
+				El procesador decodifica y ejecuta las instrucciones de los programas que se
+				encuentran cargados en la memoria principal de la computadora.
+				Además funciona como coordinador y controlador de casi todos los otros
+				componentes, tanto de los internos como de los externos.
+				<br>
+				Debido a su misión dentro de la computadora, el procesador es el que define la
+				velocidad de proceso que logre obtener la computadora. A mayor cantidad de
+				GHz, mayor será la velocidad alcanzada.
+				En cuanto a marcas, las más conocidas en el mercado actual son Intel y
+				AMD.Pero además, los procesadores pueden ser seleccionados por cantidad
+				de los bits a procesar por ciclo:<br>
+				32 bits<br>
+				64 bits<br>
+				<br>
+				La mayoría de los procesadores suelen incorporar de fábrica un ventilador
+				para mantenerlo en condiciones óptimas de temperatura el componente.
+				<br><br>
+				<div><br><center><img style="width: 350px;height: 200px;" src="../media/img/pro.jpg"></center> </div>
+				<h3>Memoria RAM.</h3><br>
+				La Random Access Memory o más conocida como memoria RAM se conecta
+				a la tarjeta madre y en ella se guardan y se cargan las instrucciones que se
+				ejecutan en el procesador.
+				Esas instrucciones son enviadas desde los componentes y dispositivos
+				conectados a la tarjeta madre y a los puertos de la computadora.
+				Las características principales que definen el funcionamiento de la memoria
+				RAM son (soportadas por la tarjeta madre):<br>
+				Cantidad de memoria en GB.<br>
+				Tipo de memoria RAM.<br>
+				Velocidad de la memoria.<br>
+				Tipo de ranura.<br>
+				<br>Es importante que tengas claro estos datos para elegir el tipo de
+				memoria RAM correcta para tu equipo. En definitiva la tarjeta madre será el
+				elemento que defina el tipo y la cantidad de RAM que puedes instalar.
+				<br><br>
+				<div><br><center><img style="width: 350px;height: 200px;" src="../media/img/ram.jpg"></center> </div>
+				<h3>Disco duro.</h3><br>
+				El disco duro de tu computadora es el componente encargado de almacenar de
+				forma permanente sistemas operativos así como los datos que ingresan en la
+				computadora.
+				Todo la información que contiene la computadora, incluyendo documentos
+				(archivos, aplicaciones, fotografías música, descargas de internet, etc.) Pero
+				además en él también se almacena el sistema operativo y todos los
+				programas instalados en la computadora.
+				Para poder ser el soporte de almacenamiento principal de la computadora, el
+				disco duro pueden contener grandes cantidades de información.
+				Todos los datos de la computadora se almacenan en el disco duro, de ahí su
+				importancia.
+				<div><br><center><img style="width: 350px;height: 200px;" src="../media/img/duro.jpg"></center> </div>
+				Por esto, un disco duro debes tener presente los siguientes datos:<br>
+				Capacidad.<br>
+				Velocidad de conexión.<br>
+				Velocidad de RPM<br>
+				<br>
+				En cuanto al tipo de conexión que requieren, los discos duros pueden ser:<br>
+				IDE<br>
+				SATA<br>
+				<br>
+				Además, hoy existen distintos tipos de discos duros, que se diferencias
+				dependiendo de la tecnología utilizada para su construcción. Hoy puedes
+				encontrar los siguientes tipos de discos duros:<br>
+				HD (disco mecánico tradicional).<br>
+				SD (disco de estado sólido).<br>
+				<br>
+				Es importante también destacar que en los últimos tiempos los discos duros
+				tradicionales están siendo reemplazados por modernas unidades de
+				almacenamiento de tipo memoria Flash.
+				Estas memorias flash no emiten calor ni ruido, tampoco se desgastan con el
+				paso del tiempo y son realmente rápidas.
+				<br><br>
+				<h3>Fuente de alimentación.</h3><br>
+				La fuente de alimentación es el componente que proporciona corriente
+				eléctrica a todos los elementos de la computadora. Esta se encuentra dentro
+				del gabinete.
+				Para ello, la fuente de alimentación transforma la corriente alterna de la red de
+				tu casa en corriente continua. Luego de ello la distribuye a todos los
+				componentes que estén conectados a la computadora.
+				Es importante tener en cuenta que las fuentes de alimentación suelen manejar
+				diferentes voltajes 12 Volts, 5 Volts y 3.3 Volts. Un dato importante en una
+				fuente de alimentación es la potencia que entrega. En este caso a más
+				potencia, mayor capacidad para conectar componentes.
+				En general una fuente de alimentación puede tener una potencia de 400W a
+				500W, aunque para computadoras que poseen hardware adicional, como
+				tarjeta gráfica para jugar videojuegos, se recomienda una fuente de 700W
+				como mínimo. Lo mejor es una fuente de más de 1000W.
+				<br>
+				Tarjetas de expansión.
+				Estas tarjetas es si no están incluidas en la tarjeta madre o bien requieren de
+				una mejoría en su desempeño.
+				<div><br><center><img style="width: 350px;height: 300px;" src="../media/img/power.jpg"></center></div>
+				<br><br>
+				<h3>Tarjeta gráfica.</h3><br>
+				La tarjeta gráfica, también llamada placa o tarjeta de video es un dispositivo
+				que se conecta a la ranura de expansión de la placa base.
+				La misma incluye un procesador gráfico o GPU, el cual se encarga de procesar
+				los gráficos de la computadora.
+				Lo cierto es que por lo general la tarjeta gráfica de alta capacidad no viene
+				incluida en la computadora, ya que la mayoría de las placas base incluyen de
+				fábrica un circuito capaz de encargarse de realizar el procesamiento de los
+				gráficos.
+				Es un componente que muchas veces puedes llegar a requerir, sobre todo si
+				manejas gráficos de gran magnitud, por ejemplo para jugar videojuegos o
+				aplicaciones de diseño gráfico, etc.
+				El procesador gráfico de una tarjeta gráfica es mucho más potente que los que
+				suelen incluir las placas base. Además, actúa como memoria RAM
+				independiente, mejorando los procesos visuales.
+				<div><br><center><img style="width: 350px;height: 200px;" src="../media/img/tarjeta.jpg"></center><br> </div>
+				<br>
+				Por supuesto debes tener en cuenta que la tarjeta de video sea compatible con
+				la placa base, es decir que la interface para la comunicación entre ambos
+				elementos sea AGP, PCI o PCI-express.
+				<br><br>
+				<h3>Tarjeta de red.</h3><br>
+				Por lo general, las computadoras suelen incluir la tarjeta de red incorporada a
+				la placa base de la misma. Por eso no es de extraña que ignores su existencia.
+				En el caso en que tu computadora no posea tarjeta de red o se haya
+				<br>
+				descompuesto, siempre puedes añadir una nueva a través de la ranura PCI-
+				express.
+				<br>
+				La tarjeta de red básicamente es la que te va a permitir conectarte a tu router
+				para poder usar internet en la computadora.
+				<br>
+				Se las conoce como tarjetas de expansión y existen dos grandes tipos de ellas:
+				<br>
+				Ethernet: Para conexión a internet por cable
+				Wi-Fi: Para conexión a internet inalámbrica
+				<br>
+				Disipadores y ventiladores.
+				<br>
+				Un disipador recoge el calor que genera un componente y lo disipa para que
+				reduzca la temperatura de ese elemento electrónico.
+				<br>
+				Se suma a ello los ventiladores internos de gabinete, que cumplen la función
+				de mantener un flujo de aire constante en el interior del gabinete. Existen
+				sistemas para mantener la temperatura de la computadora llamados
+				refrigeración líquida.<br>
+				<br>
+				
+				<font class="titulos">Componentes Externos.</font>
+				<br>Gabinete. 
+				<br>Monitor. 
+				<br>Mouse. 
+				<br>Teclado. 
+				<br>Bocinas. 
+				<br>Micrófono. <br>
+				Según aplicación de usuario. 
+				<br>Cámara web. 
+				<br>Escáneres. 
+				<br>Controles de juegos de video. 
+				<br>Sensor de huellas digitales. 
+				<br>Lector de código de barras. 
+				<br>Equipos especializados (médicos y musicales, entre otros) etc. <br>
+				<br><br>
+				<h3>Gabinete. </h3><br>
+				Básicamente es el armazón para tener los elementos de la computadora dentro  del gabinete vas a encontrar el CPU, como así también las memorias RAM, la 
+				tarjeta madre, el disco duro, buses , tarjetas de expansión, fuente de  alimentación entre otros. 
+				Un dato importante que debes tener en cuenta es que prácticamente todos los  componentes de una computadora están conectados por cables a la unidad del  sistema. 
+				Los cables se encuentran conectados a las entradas o puertos específicos, que se encuentran normalmente en la parte posterior de la unidad de sistema. <br>
+				<br><h3>Mouse (ratón).</h3><br>
+				Es el dispositivo utilizado para apuntar y seleccionar objetos, carpetas en la  computadora. 
+				Puedes encontrar diversos tipos de mouses. Los que se conectan por cable y los inalámbricos, pero además los que poseen dos botones y una rueda, o que  están llenos de botones y te permiten obtener una mejor experiencia al jugar. Los mouse se clasifican de la siguiente manera: 
+				<br>Mecánicos 
+				<br>Ópticos 
+				<br>Inalámbricos. <br>
+				La selección del mouse depende en mayor medida de la comodidad del  usuario. 
+				En definitiva apuntar y pulsar con el mouse es la forma principal que te  permite interactuar con la computadora.
+				<br><br>
+				<h3>Teclado. </h3><br>
+				El teclado es principalmente utilizado para escribir textos en la computadora. Tal como el teclado de una máquina de escribir, letras y números, pero  también posee teclas especiales que incluye las de función, las numéricas y las  de navegación. 
+				El mouse como el teclado son considerados los principales periféricos de  entrada. 
+				<br><br>
+				<h3>Monitor.</h3> <br>
+				El monitor presenta información en forma visual, utilizando texto y gráficos. La parte del monitor que presenta la información es llamada pantalla, la de  una computadora despliega la información e imágenes de las aplicaciones o  archivos requeridos. 
+				Existen tipos básicos de monitores: 
+				<br>Monitores CRT (Cathode Ray Tube o tubo de rayos cátodicos) ∙ Monitores LCD (Liquid Crystal Display) 
+				<br>Monitores LED<br> <br>
+				Ten en cuenta que si bien todos producen imágenes nítidas, los monitores  LCD y LED tienen la ventaja de ser mucho más delgados y livianos. 
+				<br>Bocinas. 
+				<br>Micrófono.
+				<br>Cámara web. 
+				<br>Ruteadores o módems son considerados como periféricos híbridos, ya que  permiten la entrada y salida de datos. 
+				<br>Además, para poder disponer de internet Wi-Fi con buena señal en toda la  casa, lo mejor es recurrir a repetidores Wi-Fi. 
+				<br>Controles de videojuegos 
+				<br>Controlador MIDI 
+				<br>MIDI son las siglas de Musical Instrument Digital Interface. Los controladores MIDI se conectan a la computadora y te  permiten reproducir o grabar sonidos. 
+
+		</div>
+		
+		<script src="..\js\main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+	<html lang="es">
+	<head>
+	<!--Titulo-->
+		<title>Entrada/Salida</title>
+		<!--Caracteres especiales-->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Conexion con la hoja de estios y tipos de letra-->
+		<link rel="stylesheet" type="text/css"	href="..\css\style.css" media="screen"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Koulen&display=swap" rel="stylesheet">
+	</head>
+	<body class="cuerpo">
+	<!--Div con boton del menu-->
+		<div class="hamburger hamburger--spring" onclick="muestra()">
+		<div class="hamburger-box">
+		  <div class="hamburger-inner"></div>
+		</div>
+	  </div>
+	  
+	  <!--Menu desplegable-->
+	  <nav class="nav" id="switch" >
+			<ul class="list">
+			
+				<li class="list__item">
+				<div class="list__button"><a href="./Inicio.html" class="nav__link">Inicio</a></div>
+				
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 1</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad1.html" class="nav__link nav__link--inside">Tipos de Arquitectura</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad11.html" class="nav__link nav__link--inside">Arquitectura Segmentada</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad12.html" class="nav__link nav__link--inside">Multiprocesamiento</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad13.html" class="nav__link nav__link--inside">Analisis de componentes</a>
+						</li>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad14.html" class="nav__link nav__link--inside">CPU</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad15.html" class="nav__link nav__link--inside">ALU</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 2</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad2.html" class="nav__link nav__link--inside">Unidad de control</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad21.html" class="nav__link nav__link--inside">Registros CPU</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad22.html" class="nav__link nav__link--inside">Buses</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad23.html" class="nav__link nav__link--inside">Memoria</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad24.html" class="nav__link nav__link--inside">Entrada/Salida</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 3</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad3.html" class="nav__link nav__link--inside">Ciclo de instrucciones</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad31.html" class="nav__link nav__link--inside">Modos de direccionamiento</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad32.html" class="nav__link nav__link--inside">Chipset</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad33.html" class="nav__link nav__link--inside">Ambiente de Servicio</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 4</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad4.html" class="nav__link nav__link--inside">Ambientes de Servicio</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad41.html" class="nav__link nav__link--inside">Paralelismo</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad42.html" class="nav__link nav__link--inside">Sistemas de memoria</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad43.html" class="nav__link nav__link--inside">Memoria Distribuida</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+			</ul>
+		</nav>
+		<!--Div para el titulo-->
+		<div class="sup">
+			<center class="titulo">Arquitectura de computadoras</center>
+		</div>
+		
+		<div class="info1">
+		 <font class="titulos">Entrada/Salida.</font><br>
+		</div>
+		<div class="desc">
+		Organizacion de entrada/salida<br>
+		La familia de procesadores 80x86, presente en el IBM PC, utiliza la arquitectura Von
+		Neumann, que puede verse en la figura 1. El denominado bus del sistema conecta las
+		diferentes partes de una maquina von Neumann, y en la familia 80x86 se diferencian 3 clases
+		de buses:<br>
+		<br>1. Bus de datos, de 8, 16, 32 o 64 bits dependiendo del modelo (64 bits para los Pentiums
+		de ultima generacion). El numero de bits se usa, en general, para determinar el tama˜no
+		(size) del procesador.
+		<br>2. Bus de direcciones, para poder conectar la CPU con la memoria y con los dispositivos
+		de entrada/salida.
+		<br>3. Bus de control, para enviar se˜nales que determinan como se comunica la CPU con el
+		resto del sistema (por ejemplo, las lıneas de lectura (read) y escritura (write) especifican
+		que es lo que se esta haciendo en la memoria).<br>
+		<br>CPU
+		<br>Memoria
+		<br>Dispositivos de Entrada/Salida
+		<br>Figura 1: Arquitectura tıpica de una maquina Von Neumann
+		Por tanto, los dispositivos de entrada/salida son una de las partes fundamentales de la
+		arquitectura del computador y su objetivo es la eficiencia en la gestion de las operaciones de
+		entrada/salida, descargando a la CPU de tanto trabajo como sea posible. Estos dispositivos
+		tienen velocidades muy variadas:<br>
+		<br>1
+		Dispositivos lentos (como el raton, el teclado, el joystick. . . )<br>
+		Dispositivos de velocidad media (como una impresora)<br>
+		Dispositivos rapidos (como un disco duro, una tarjeta de red. . . )<br>
+		Por tanto, un dispositivo concreto no puede aceptar datos enviados a una tasa arbitrariamente alta (por ejemplo, una impresora no puede imprimir los millones de caracteres por
+		segundo que serıa capaz de enviarle un Pentium IV). Por ello, ha de haber alguna forma de
+		coordinar el envıo de datos entre la CPU y los perifericos. Esa es la mision de los circuitos de
+		interfaz.<br>
+		Existen 2 formas basicas de conectar estos circuitos de interfaz, dependiendo del tipo de
+		procesador en que se base la arquitectura. Ambos tipos de acceso requieren que la CPU realice
+		el movimiento de los datos entre el periferico y la memoria principal:<br>
+		1. Conexion mapeada en memoria (memory–mapped I/O), que usa “direcciones especiales” en el espacio normal de direcciones. En este caso el circuito de interfaz se conecta
+		en el computador como si fuera memoria. Presentan este tipo de entrada/salida, por
+		ejemplo, aquellas arquitecturas basadas en el M68000 de Motorola. Cualquier instruccion que acceda a la memoria (como “mov”) puede acceder a un puerto I/O mapeado
+		en memoria.<br>
+		2. Conexion mediante puertos especiales de entrada/salida (I/O–mapped I/O),
+		que usa “instrucciones especiales” de entrada/salida 1 y un espacio de direcciones especıfico. Este es el caso de las CPUs 80x86, y por tanto el que nos interesa para este
+		proyecto.<br>
+		La familia de procesadores 80x86 proporciona, por tanto, dos espacios de direcciones:
+		Para memoria<br>
+		Para dispositivos de E/S<br><br>
+		El bus de direcciones (address bus) varıa de tama˜no segun el procesador de la familia que se
+		emplee (puede ser de 20, 24 o 32 bits), pero para la entrada/salida es siempre de 16 bits.
+		Esto permite al microprocesador direccionar hasta 65536 diferentes localizaciones especiales
+		de entrada/salida, lo que es mas que suficiente para la mayorıa de los dispositivos, aunque
+		muchas veces un dispositivo requiera mas de una direccion de entrada/salida (por ejemplo,
+		en el caso del raton PS/2 veremos que habra que acceder a las direcciones 60h y 64h; en el
+		caso del puerto de juegos, suele ser la 201h). Hay 2 espacios de direcciones, pero un solo bus
+		de direcciones y son las lıneas de control las que deciden a que espacio estamos accediendo
+		en cada momento. De esta manera, el direccionamiento de entrada/salida (I/O addressing)
+		se comporta exactamente igual que el direccionamiento de memoria (memory addressing). La
+		memoria y los dispositivos I/O comparten el bus de datos y los 16 primeros bits del bus de
+		direcciones.<br>
+		Resumiendo, existen dos consideraciones basicas que debemos hacer en el subsistema de
+		entrada/salida en un IBM PC:<br>
+		1 La familia Intel 80x86 usa las instrucciones en ensamblador in y out para acceder a los puertos de
+		entrada/salida. Estas instrucciones funcionan igual que mov excepto por que ponen la direccion en el bus de
+		direcciones de entrada/salida en vez de en el bus de direcciones de memoria.
+		<br>
+		1. Las CPUs 80x86 requieren “instrucciones especiales” para acceder a los dispositivos de
+		entrada/salida.<br>
+		2. No se pueden direccionar mas de 65536 direcciones de entrada/salida. Esto es un problema porque algunos dispositivos requieren mas direcciones, como por ejemplo una
+		tarjeta grafica VGA tıpica, que necesita mas de 128000. Afortunadamente, existen medios, utilizando la circuiterıa adecuada, para mapear en memoria esos dispositivos.<br>
+		Unidad de
+		Control<br>
+		ALU<br>
+		Circuito de
+		Interfaz de CPU<br>
+		Datos Programa<br>
+		Memoria<br>
+		Regs.<br>
+		I/O<br>
+		Dispositivo
+		de I/O<br>
+		Líneas de control<br>
+		Líneas de direcciones<br>
+		Líneas de datos<br>
+		Regs.<br>
+		Un puerto I/O tiene una apariencia de celda de memoria para el computador, pero tiene
+		conexiones con el mundo exterior. Los puertos de entrada/salida se clasifican habitualmente
+		en tres tipos diferentes:<br>
+		Puertos de solo lectura (read–only o input port)<br>
+		Puertos de solo escritura (write–only o output port)<br>
+		Puertos de lectura–escritura (read–write o input–output)<br>
+		Bus de datos desde CPU<br>
+		línea de control de escritura<br>
+		línea de decodificación de direcciones<br>
+		Write<br>
+		Enable<br>
+		Data Datos al exterior<br>
+		Puerto de solo–escritura con un latch
+		<br>Por regla general, los puertos de entrada/salida utilizan un latch como elemento de memoria. Por ejemplo, en el caso de un puerto de solo escritura el latch captura los datos escritos
+		en el por la CPU y los hace disponibles en un conjunto de cables externos a la CPU y al
+		sistema de memoria. En este tipo de puertos la CPU no puede leer el dato que ha escrito en
+		el latch ya que para que este funcione deben estar activas tanto la lınea de direcciones como
+		la de control, y en el caso de querer realizar una lectura la lınea “control de escritura” (write
+		control) no estarıa activa. La figura 3 muestra una posible implementacion de un puerto de
+		solo escritura con un latch.<br>
+		Si el puerto es de lectura–escritura, la CPU puede comprobar que el dato se ha escrito
+		correctamente leyendo del puerto. Un puerto de entrada/salida se comportarıa como se describe en la figura 4 (la parte inferior de la figura corresponderıa a un puerto de solo lectura
+		(input port)). Los datos que se escriban en un puerto de solo lectura son ignorados por el
+		sistema.<br>
+		línea de control de escritura<br>
+		línea de decodificación de direcciones<br>
+		línea de control de lectura<br>
+		<br>
+		Puerto de lectura–escritura
+		Formas de realizar la entrada/salida
+		Ya hemos visto que para coordinar el envıo de datos entre la CPU y los dispositivos se
+		usan circuitos de interfaz especiales. Existen basicamente tres formas de realizar la gestion
+		de entrada/salida en un dispositivo, es decir, tres formas en que estos circuitos de interfaz
+		pueden operar:<br>
+		1. Entrada/salida por encuesta (tambien llamada por consulta o programada, en ingles
+		“polling”).<br>
+		2. Entrada/salida por interrupciones.<br>
+		3. Entrada/salida por acceso directo a memoria.<br>
+		Entrada/salida por consulta<br>
+		El polling, utilizado en las primeras computadoras personales (como Apple II), consiste
+		en que la CPU sondea periodicamente al dispositivo para ver cual es su estado. Ese sondeo se
+		puede hacer, por ejemplo, leyendo de una direccion de entrada/salida correspondiente a uno
+		o varios registros de estado del dispositivo. Los bits de esos registros de estado nos diran cual
+		es la situacion concreta del dispositivo (por ejemplo, si se trata de una impresora, podemos
+		saber si esta lista para recibir nuevos caracteres; si se trata de un teclado, podemos saber si
+		el usuario ha presionado una tecla y el caracter aun no se ha leıdo, etc). Otras veces no hay
+		tal registro de estado, y simplemente se lee lo que haya en la direccion I/O desde programa,
+		decidiendo luego que hacer con el dato leıdo. Este es el caso, por ejemplo, de un joystick
+		analogico conectado al puerto de juegos del PC.<br>
+		Esta forma de entrada/salida es sencilla, pero claramente ineficiente. Por ejemplo, si un
+		usuario tarda 10 segundos en mover el raton, se habran realizado miles de encuestas al dispositivo sin detectar un nuevo evento, con la consecuente perdida de tiempo para realizar
+		otras tareas en la CPU. Por otra parte, el ritmo de transferencia de datos esta limitado por
+		la velocidad de la CPU, ya que no podremos encuestar al dispositivo con una frecuencia arbitrariamente alta. Por tanto, esta forma de entrada/salida debe evitarse en lo posible. Sin
+		embargo, en algunas ocasiones no quedara otra opcion, ya que el dispositivo en cuestion no
+		genera interrupciones (como es el caso del joystick que veremos en este proyecto).<br>
+		<br>Entrada/Salida por interrupciones<br>
+		En el caso de la entrada/salida por interrupciones, es el dispositivo quien establece el
+		momento en que se realiza la transferencia de los datos, avisando a la CPU de que ha ocurrido
+		un evento (por ejemplo, que el usuario haya presionado una tecla). En este punto, debemos
+		aclarar que en la familia 80x86 existen tres tipos de interrupciones, que a veces producen
+		confusion por la nomenclatura empleada en diversos textos:<br>
+		1. Las traps o interrupciones software son interrupciones invocadas por el usuario desde
+		programa. En este caso, la CPU pasa a ejecutar el manejador de trap asociado (su
+		rutina de atencion a la interrupcion o ISR2
+		).<br>
+		<div><br><center><img style="width: 350px;height: 200px;" src="../media/img/es.jpg"></center><br> </div>
+		2. Las excepciones son traps generadas automaticamente en respuesta a alguna condicion
+		excepcional producida al intentar ejecutar una instruccion: division por cero, codigo de
+		operacion ilegal. . . Tambien en este caso se ejecuta la ISR asociada, decidiendo, en su
+		caso, que hacer con la situacion anomala.<br>
+		3. Las interrupciones hardware, a las que llamaremos simplemente “interrupciones”, se
+		basan en un evento hardware externo a la CPU y no relacionado con la secuencia de
+		instrucciones que se este ejecutando en ese momento. Son las que un ingeniero electronico
+		mas intuitivamente relacionarıa con el termino “interrupcion”, y con las que vamos a
+		tratar en este proyecto.
+		Para cada tipo de interrupcion, por tanto, se puede instalar una rutina de atencion o
+		servicio de interrupcion. Cuando la CPU recibe notificacion de la interrupcion detiene el
+		programa en ejecucion, ejecuta la ISR (es decir, sirve al dispositivo haciendo que cese su
+		peticion de interrupcion (si es necesario, se accede al controlador de interrupciones para
+		hacer lo mismo)) y finalmente devuelve el control al programa, restaurando su estado anterior.
+		Por tanto, una condicion importante a cumplir es que una ISR debe preservar el estado del
+		ISR: Interrupt Service Routine. Procedimiento creado especıficamente para manejar una trap, excepcion
+		o interrupcion.<br>
+		Procesador (el contenido de todos sus registros) para poder volver al estado anterior a la
+		llamada.
+		Existe una diferencia entre las interrupciones hardware y las demas: cuando se entra en
+		una ISR de una interrupcion hardware, el procesador 80x86 deshabilita posteriores interrupciones hardware poniendo a 0 el flag de interrupcion. Esto no ocurre con las traps ni con las
+		excepciones 3
+		. Por tanto, si queremos inhabilitar las interrupciones en medio de una ISR de
+		trap o excepcion, hay que hacerlo explıcitamente, con la instruccion “cli” en ensamblador o
+		con los medios que proporcione el sistema operativo. De la misma forma, para permitir nuevas
+		interrupciones hardware en medio de una ISR hardware, hay que usar una instruccion “sti”.
+		Las fuentes primarias de interrupcion en el PC son variadas:
+		timer chip del PC<br>
+		<br> Esquema de conexion de los PIC<br>
+		En la tabla 1 pueden consultarse las fuentes de interrupcion mas frecuentes en el PC, junto
+		con su numero de interrupcion asociado. Todos estos dispositivos se conectan al controlador
+		programable de interrupciones o PIC (Programmable Interrupt Controller ) Intel 8259A, que
+		establece prioridad entre las interrupciones y se conecta con la CPU. Este controlador de
+		interrupciones (que se denomina genericamente “8259”) acepta interrupciones de hasta 8
+		dispositivos. Si cualquier dispositivo pide servicio, el 8259 se “conectara” con la CPU y le
+		pasara un vector de interrupcion programable. En un principio, el PC IBM original solo
+		soportaba ocho interrupciones diferentes ya que usaba un solo chip 8259. Mas tarde IBM (y
+		todos los fabricantes de PCs) a˜nadieron un segundo PIC en el PC/AT y posteriores maquinas.
+		De hecho, podrıan encadenarse hasta nueve chips del 8259 para soportar un total de 64
+		3Notese que el flag de interrupcion del 80x86 solo afecta a las interrupciones hardware, y no evita que haya
+		una trap o una excepcion.
+		dispositivos que generen interrupciones. Lo normal, sin embargo, es tener solamente dos, tal
+		como se muestra, y soportar un total de 15 interrupciones.
+		Entrada al 8259 INT 80x86 Dispositivo <br>
+		IRQ 0 8 Chip temporizador del sistema (timer chip)
+		IRQ 1 9 Teclado
+		IRQ 2 0Ah Conexion con el PIC 2(IRQ’s 8–15)
+		IRQ 3 0Bh Puerto serie 2 (COM2/COM4)
+		IRQ 4 0Ch Puerto serie 1 (COM1/COM3)
+		IRQ 5 0Dh Puerto paralelo 2 en AT, reservado en sistemas PS/2
+		IRQ 6 0Eh Controladora de floppy
+		IRQ 7 0Fh Puerto paralelo 1
+		IRQ 8/0 70h Reloj de tiempo real
+		IRQ 9/1 71h Redireccion de la IRQ 2
+		IRQ 10/2 72h Reservado
+		IRQ 11/3 73h Reservado
+		IRQ 12/4 74h Reservado en AT, Raton PS/2 en sistemas PS/2
+		IRQ 13/5 75h Interrupcion de la FPU (Floating Point Unit)
+		IRQ 14/6 76h Controladora de disco duro
+		IRQ 15/7 77h Reservado
+		<br>
+		y el IRQ 7 la mas baja. Si tenemos una tarea que queremos que sea de maxima prioridad
+		(como por ejemplo el control de un reactor nuclear) seguramente usarıamos la interrupcion no
+		enmascarable (int 2), no conectada con el 8259, que no puede desactivarse mediante software
+		y es de mayor prioridad que cualquiera que venga del PIC. Esto es ası porque en realidad los
+		chips de la familia 80x86 presentan dos posibles entradas de interrupcion. La primera es la
+		interrupcion enmascarable, a la que se conecta el 8259, que como su nombre indica se puede
+		enmascarar o desenmascarar con las instrucciones cli y sti. La segunda es para la interrupcion
+		no enmascarable, que siempre esta activada por defecto.
+		Entrada/Salida por acceso directo a memoria (DMA)
+		Tanto los subsistemas de entrada/salida mapeada en memoria como los que usan puertos
+		de entrada/salida necesitan que sea la CPU la que realice la transferencia de los datos entre el
+		dispositivo y la memoria. Para algunos dispositivos de alta velocidad, esta forma de procesar
+		los datos puede resultar demasiado lenta. En el caso del DMA, el dispositivo puede operar
+		directamente sobre la memoria, siempre que la CPU le haya concedido el permiso para hacerlo.
+		De esta manera, solo se avisa a la CPU al comienzo o al final de una operacion sobre memoria
+		y se consigue una tasa de transferencia de datos superior a la de los otros metodos. Ademas
+		esto a menudo permite que las operaciones de entrada/salida se realicen en paralelo a otras
+		operaciones de la CPU, aumentando ası el rendimiento global del sistema. Sin embargo, notese
+		que no es posible que la CPU y el dispositivo utilicen a la vez el bus de direcciones y de datos,
+		por lo que el procesamiento paralelo se dara solo cuando la CPU este operando sobre datos
+		contenidos en una memoria cache.
+	</div>
+		
+		<script src="..\js\main.js"></script>
+	</body>
+</html>
